@@ -42,6 +42,7 @@ const checkWinner = (box) => {
       if (pos1Val === pos2Val && pos2Val === pos3Val) {
         console.log("winner", pos1Val);
         msg.innerText = `Winner is ${pos1Val}`;
+        msg.style.display = "block";
         msg.style.backgroundColor = "green";
         disableBTn();
       }
